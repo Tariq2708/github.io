@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMT EXTRACTER</title>
+<link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7yLNcckFKHWXmqFFYYH1BHML2StL8TiLPzA&usqp=CAU" type="image/x-icon">
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background:url("https://wallpapercave.com/wp/wp2234546.jpg")
+    }
+    .container {
+        width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        position: absolute;
+        text-align: center;
+        top:200px;
+        left: 500px;
+        background-color: black;
+        border: 1px solid #ccc;
+        color: white;
+        border-radius: 5px;
+        {% comment %} background-color: #f9f9f9; {% endcomment %}
+    }
+    .input-container {
+        margin-bottom: 30px;
+        
+    }
+    .input-container input[type="text"] {
+        width: 500px;
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius:  30px;
+        color: white;
+        background-color: rgb(16, 127, 247);
+        border: none;
+    }
+    .btn:hover{
+        background: linear-gradient(to right, blue, white);
+        transform:translateX(5px);
+        transform:translateY(-5px);
+        color:black;
+        font-weight: 550;        
+    }
+    #headlines {
+        margin-top: 20px;
+        white-space: pre-line;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Headline Extractor</h2>
+    <div class="input-container">
+        <input type="text" id="websiteUrl" placeholder="Enter website URL">
+    </div>
+    <button class="btn" onclick="extractHeadlines()">Extract Headlines</button>
+    {% comment %} <div id="headlines"></div> {% endcomment %}
+</div>
+
+<script>
+    function extractHeadlines() {
+        var websiteUrl = document.getElementById("websiteUrl").value;
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var response = JSON.parse(this.responseText);
+                if (response.headlines) {
+                    document.getElementById("headlines").innerText = response.headlines;
+                    
+                } else {
+                    console.error("Error:", response.error);
+                }
+            }
+        };
+        xhr.open("GET", "/extract?websiteUrl=" + encodeURIComponent(websiteUrl), true);
+        xhr.send();
+        // Clear the input box
+        document.getElementById("websiteUrl").value = "";
+    }
+</script>
+</body>
+</html>
