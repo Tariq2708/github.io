@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://img.freepik.com/premium-photo/blue-betta-fish-with-black-background_542670-7163.jpg);
+    background-size:cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background: transparent; */
+    background-color: black;
+    position: fixed;
+    color: rgb(251, 251, 253);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 50px;
+    top: 0;
+}
+
+nav h1 , h3, a {
+    cursor: pointer;
+    color: aliceblue;
+    text-decoration: underline;
+    font-weight: 450;
+}
+.a1{
+    background-color: rgba(240, 248, 255, 0.466);
+    margin-top: 80px;
+    width: 50%;
+    margin-left: 350px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.a1 h1{
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+.a1 p{
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: 500;
+}
+.a2{
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-around;
+
+}
+.contact{
+    background-color: rgba(115, 231, 246, 0.479);
+    border-radius: 30px;
+    width: 200px;
+    font-weight: 500;
+    /* text-shadow: 1px 1px 1px white; */
+    height: 200px;
+    padding-left: 20px;
+}
+.contact i,h4,p{
+    margin-top: 15px;
+    color: black;
+}
+
+.location{
+    background-color: rgba(246, 164, 239, 0.484);
+    border-radius: 30px;
+    width: 200px;
+    font-weight: 500;
+    /* text-shadow: 1px 1px 1px white; */
+    height: 200px;
+    padding-left: 20px;
+}
+.location i,h4,p{
+    margin-top: 15px;
+    color: black;
+}
