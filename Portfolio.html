@@ -1,0 +1,158 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <script src="https://kit.fontawesome.com/19aebf71e4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="head">
+        
+        <img src="Image/Tariq.jpg" alt="" style="width: 1000px; margin-left: 400px;" id="back1">
+    
+        <div class="container">
+            <nav>
+                <img src="Image/Tariq's logo.png" alt="Logo" id="tariqlogo"
+                    style="width: 120px; position: absolute; left: 1300px; top: 10px;">
+                <ul id="sidemenu">
+                    <li><a class="hello" class="hello" href="#" onclick="navigateToabout()" > About Me </a></li>
+                    <li><a class="hello" href="#" onclick="navigateTomywork()"> Projects </a></li>
+                    <li><a class="hello" href="#" onclick="navigateToContact()"> Contact </a></li>
+                    <i class="fa-solid fa-x" class="hello" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="head_text">
+                <h1>Hi i'm <span>Mohamed Tariq</span></h1>
+                <p>M.Sc. CS Graduate</p>
+            </div>
+        </div>
+        <!------------------------------------- about --------------------------------------->
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Image/TS.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">About Me</h1>
+                    <p>Motivated graduate with expertise in software development and problem-solving. Proficient in
+                        algorithm design and data structures, with hands-on experience in various programming languages.
+                        Strong teamwork abilities and a passion for innovative projects.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-tab" onclick="opentab('skill')">Skills</p>
+                        <p class="tab-links" onclick="opentab('edu')">Education</p>
+                    </div>
+                    <div class="tab-con skills" id="skill">
+                        <ul>
+                            <li><span>Programming Languages</span> <br><br> Python, JavaScript, HTML/CSS</li>
+                            <li><span>Databases</span> <br><br>SQL, MySQL</li>
+                            <li><span>Development Tools</span> <br><br> Pycharm, Visual Studio Code</li>
+                            <li><span>Operating System</span> <br><br> Linux</li>
+                        </ul>
+                    </div>
+                    <div class="tab-con" id="edu">
+                        <ul>
+                            <li><span>M.Sc. Computer Science</span> <br><br> Jamal Mohamed College - 2023</li>
+                            <li><span>B.Sc. Computer Science</span> <br><br> Jamal Mohamed College - 2021</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------My Work-------------------------------------- -->
+    <div id="mywork">
+        <div class="container">
+            <h1 class="sub">
+                My Projects
+            </h1>
+            <div class="work-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Academic Project</h2>
+                    <p>Developed "Program-Based Question Bank Access"
+                        web app using Python, MySQL, HTML, CSS, and
+                        JavaScript. Led end-to-end development, designed
+                        database schema, implemented user authentication,
+                        and created interactive interfaces. Successfully
+                        deployed locally.</p>
+                    <a
+                        href="https://github.com/Tariq2708/Academic-Project/tree/main/Question%20Bank%20Access%20Project">learn
+                        more</a>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Product Inventory Tracker</h2>
+                    <p>Created in MySQL-Workbench. It includes 2
+                        Tables- Employers details and Product details.
+                        It also includes various components of our DBMS
+                        such as schema, tables and relationship between
+                        them.</p>
+                    <a href="https://github.com/Tariq2708/SQL-Projects/tree/main/Product_inventory_Tracker">learn
+                        more</a>
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Netflix Clone</h2>
+                    <p>I spearheaded the development of a Netflix
+                        homepage clone using HTML and CSS,
+                        demonstrating strong front-end skills.
+                        Crafted intuitive design elements for smooth
+                        navigation and utilized innovative techniques for
+                        dynamic content presentation. This project
+                        underscores my commitment to delivering polished
+                        web solutions prioritizing user experience.
+                    </p>
+                    <a href="https://github.com/Tariq2708/SQL-Projects/tree/main/Product_inventory_Tracker">learn
+                        more</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------contactMe------------------------------------ -->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactleft">
+                    <h1 class="sub">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> <br>s.mohamedtariq@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> <br>+91 9786578444</p>
+                    <div class="social">
+                        <a
+                            href="https://www.linkedin.com/in/mohamed-tariq-0606b9215?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhX7MwcsKTHyt92HmGFlnMQ%3D%3D"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Image/Tariq_resume_2024.pdf" download class="btn btn2" class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contactright">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Portfolio.js"></script>
+    <script>
+       
+    </script>
+</body>
+
+
+</html>
