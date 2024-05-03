@@ -145,6 +145,7 @@ nav ul li a :hover::after {
 #mywork {
   padding: 10px 0px;
   margin-top: 80px;
+  margin-bottom: 100px;
 }
 .work-list {
   display: grid;
@@ -183,8 +184,9 @@ nav ul li a :hover::after {
 }
 /* -----------------------------------------contactMe------------------------------------ */
 #Contact{
-  margin-top: 520px;
-}.contactleft {
+  margin-top: 600px;
+}
+.contactleft {
   flex-basis: 35%;
 }
 .contactright {
