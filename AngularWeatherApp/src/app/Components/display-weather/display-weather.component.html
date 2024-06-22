@@ -1,0 +1,30 @@
+<div class="container m-auto ">
+    <div class="row">
+        <!-- DAYS PART -->
+        <div class="col-md-4 p-1">
+            <weekDays [threeDaysWeather]="daysUI" (selectedDay)="getWeatherOfSelectedDay($event)"></weekDays>
+        </div>
+
+        <!-- CHART PART -->
+        <div class="col-md-8 p-1"  >
+            <temperatureChart [hoursArr]="hours"></temperatureChart>
+        </div>
+    </div>
+
+    <div class="row second">
+        <!-- UV PART -->
+        <div class="col-md-4 px-1 my-2">
+            <UV [degree]="UV"></UV>
+        </div>
+
+        <!-- SUN PART -->
+        <div class="col-md-4 px-1 my-2">
+            <equinoxes [sunriseTime]="equinoxes.sunrise" [sunsetTime]="equinoxes.sunset"></equinoxes>
+        </div>
+
+        <!-- HUMIDITY PART -->
+        <div class="col-md-4 px-1 my-2">
+            <humidity [humidityPercentage] = "humidity"></humidity>
+        </div>
+    </div>
+</div>

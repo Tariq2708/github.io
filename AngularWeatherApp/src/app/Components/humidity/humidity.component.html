@@ -1,0 +1,12 @@
+<div class="humidity-card border d-flex flex-column align-items-center">
+    <div class="header d-flex align-items-center">
+        <i class="bi bi-moisture"></i>
+        <p class="title m-0">Humidity</p>
+    </div>
+    <div class="pie">
+        <circle-progress [percent]="humidityPercentage" [outerStrokeWidth]="10" [innerStrokeWidth]="5"
+            [outerStrokeColor]="'#4CAF50'" [innerStrokeColor]="'#f4f7f6'" [animation]="true" [animationDuration]="800"
+            [unitsFontSize]="'20'" [titleFontSize]="'20'" [titleColor]="'#4CAF50'" [unitsColor]="'#4CAF50'"
+            [showSubtitle]="false" [radius]="70"></circle-progress>
+    </div>
+</div>

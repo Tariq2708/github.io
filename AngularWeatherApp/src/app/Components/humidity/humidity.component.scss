@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.humidity-card {
+    width: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(245, 243, 243, 0.1);
+        // padding: 20px;
+        // margin: 20px 0;
+        background-color: rgba(33, 32, 32, 0.405);
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 2px black;
+    // margin-bottom: 20px;
+}
+
+.header i {
+    font-size: 24px;
+    color: #02f50b;
+}
+
+.title {
+    font-size: 20px;
+    color: #fbfcfd;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.pie {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 2px rgb(14, 52, 10);
+}
+
+.pie circle-progress {
+    width: 150px !important;
+    height: 150px !important;
+}

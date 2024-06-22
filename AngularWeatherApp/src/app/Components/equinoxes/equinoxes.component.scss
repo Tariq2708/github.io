@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sunContainer {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(33, 32, 32, 0.405);
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd700;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top:20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sun {
+    font-size: 48px;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgb(249, 204, 4);
+}
+
+.sun-info {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.sunrise, .sunset {
+    flex: 1;
+    padding: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.small-text, .sun-time {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.sun-time {
+    font-size: 18px;
+    margin-top: 5px;
+}
